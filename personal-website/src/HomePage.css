@@ -1,0 +1,44 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(181, 211, 238);
+    font-family: 'Courier New', Courier, monospace;
+}
+.ui.top.fixed.menu {
+    height: 8vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color: rgb(181, 211, 238);
+    margin-bottom: 1px;
+}
+.title { 
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+}
+.subtext {
+    margin-top: 15px;
+    width: 500px;
+    text-align: center;
+    word-wrap: break-word;
+}
+.prompt {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+.skills-container {
+    background-color: rgb(46, 44, 44);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
