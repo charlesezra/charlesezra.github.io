@@ -14,13 +14,15 @@ const AboutTemplate = () => (
         </div>
         <div className="about-container">
             <div>
+                <div class="profile-photo"></div>
                 <h1 className="title">Charles Ezra Cabauatan</h1>
                 <div className="subtitle">
                     Student | Developer 
                 </div>
                 <div className="subtext">
-                    I am currently a senior at Gar-Field High School. I will be continuing
-                    my studies at Virginia Tech with the intent on majoring in Computer Science.
+                    I am currently a freshman at Virginia Tech studying Computer Science.
+                    I am looking for an internship position to be able to gain experience
+                    and improve my skill set.
                 </div>
                 <div className="prompt"> 
                     Read More
