@@ -4,7 +4,7 @@ import './HomePage.css';
 const AboutTemplate = () => (
     <div>
         <div className="ui top fixed menu">
-            <a className="item">Charles Cabauatan</a>
+            <a className="item">Charles Ezra Cabauatan</a>
             <a className="item">Skills</a>
             <a className="item">Resume</a>
             <a className="item">Projects</a>
@@ -21,13 +21,8 @@ const AboutTemplate = () => (
                 </div>
                 <div className="subtext">
                     I am currently a freshman at Virginia Tech studying Computer Science.
-                    I am looking for an internship position to be able to gain experience
-                    and improve my skill set.
-                </div>
-                <div className="prompt"> 
-                    Read More
-                    <br/><br/>
-                    <i class="big angle double down icon"></i>
+                    I am looking for a summer internship position to be able to gain 
+                    experience and improve my skill set.
                 </div>
             </div>
         </div>
