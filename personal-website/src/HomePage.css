@@ -1,42 +1,61 @@
 .about-container {
-    display: flex;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 0.5fr 0.75fr 0.25fr 0.25fr 0.25fr 0.25fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . . ."
+        ". ph ph ."
+        ". . . ."
+        ". nm nm ."
+        ". sub sub ."
+        ". text text ."
+        ". . . .";
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: rgb(181, 211, 238);
     font-family: 'Courier New', Courier, monospace;
 }
 .ui.top.fixed.menu {
     height: 6vh;
     font-family: 'Lucida', Courier, monospace;
-    font-size: 16px;
+    font-size: 1.25vw;
     background-color: rgb(181, 211, 238);
     margin-bottom: 1px;
 }
+strong:hover {
+    color: maroon;
+    font-size: 20px;
+}
 .profile-photo{
-    grid-area: photo;
+    grid-area: ph;
     background-image: url("logo.JPG");
     background-size: cover;
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
     border-radius: 100%;
     border: 3px dotted black;
     box-shadow: 10px 10px 5px rgb(46, 44, 44);
     margin: auto;
 }
 .title { 
-    font-size: 40px;
+    grid-area: nm;
+    font-size: 2vw;
+    text-justify: center;
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
+    margin: auto;
 }
 .subtitle {
+    grid-area: sub;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
+    margin: auto;
 }
 .subtext {
-    margin-top: 25px;
-    font-size: 18px;
-    width: 500px;
+    margin: auto;
+    grid-area: text;
+    font-size: 16px;
     text-align: center;
     word-wrap: break-word;
 }

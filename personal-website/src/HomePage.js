@@ -13,17 +13,15 @@ const AboutTemplate = () => (
             </div>
         </div>
         <div className="about-container">
-            <div>
-                <div class="profile-photo"></div>
-                <h1 className="title">Charles Ezra Cabauatan</h1>
-                <div className="subtitle">
-                    Student | Developer 
-                </div>
-                <div className="subtext">
-                    I am currently a freshman at Virginia Tech studying Computer Science.
-                    I am looking for a summer internship position to be able to gain 
-                    experience and improve my skill set.
-                </div>
+        <div class="profile-photo"></div>
+            <h1 className="title">Charles Ezra Cabauatan</h1>
+            <div className="subtitle">
+                Student | Developer 
+            </div>
+            <div className="subtext">
+                I am currently a freshman at <strong>Virginia Tech</strong> studying Computer Science.
+                I am looking for a summer internship position to be able to gain 
+                experience and improve my skill set.
             </div>
         </div>
     </div>
