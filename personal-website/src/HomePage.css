@@ -8,60 +8,156 @@
         ". . . ."
         ". ph ph ."
         ". . . ."
-        ". nm nm ."
+        "nm nm nm nm"
         ". sub sub ."
         ". text text ."
         ". . . .";
     justify-content: center;
     align-items: center;
-    background-color: rgb(181, 211, 238);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)), url("assets/mac.jpg");
+    background-size: cover;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 .ui.top.fixed.menu {
     height: 6vh;
     font-family: 'Lucida', Courier, monospace;
-    font-size: 1.25vw;
-    background-color: rgb(181, 211, 238);
+    font-size: 2vmin;
+    background-color: rgb(113, 88, 194);
     margin-bottom: 1px;
 }
 strong:hover {
-    color: maroon;
-    font-size: 20px;
+    color: rgb(180, 3, 3);
+    font-size: 3vmin;
 }
 .profile-photo{
     grid-area: ph;
-    background-image: url("logo.JPG");
+    background-image: url("assets/logo.JPG");
     background-size: cover;
-    height: 180px;
-    width: 180px;
+    height: 40vmin;
+    width: 40vmin;
     border-radius: 100%;
     border: 3px dotted black;
-    box-shadow: 10px 10px 5px rgb(46, 44, 44);
+    box-shadow: 10px 10px 5px rgba(86, 61, 168, 0.747);
     margin: auto;
 }
 .title { 
     grid-area: nm;
-    font-size: 2vw;
-    text-justify: center;
+    font-size: 5vmin;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
     margin: auto;
 }
 .subtitle {
     grid-area: sub;
     text-align: center;
-    font-size: 16px;
+    font-size: 2vmin;
     margin: auto;
+    box-shadow: 5px 5px 5px rgba(86, 61, 168, 0.651);
 }
 .subtext {
     margin: auto;
     grid-area: text;
-    font-size: 16px;
+    font-size: 2.5vmin;
+    line-height: 1.6;
     text-align: center;
     word-wrap: break-word;
+    text-shadow: red 0 -2px;
+}
+.experience-container{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/matrix.jpg");
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "skills projects"
+        "contact contact";
+    grid-gap: 20px;
+    padding: 20px;
 }
 .skills-container {
-    background-color: rgb(46, 44, 44);
+    grid-area: skills;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("assets/bg-cover.jpg");
+    border: 1px solid white;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
+    padding: 10px;
+    height: 45vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "boxTitle"
+        "boxContent";
+    box-shadow: -10px 10px 5px black;
+}
+.skills-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills{
+    flex: 1;
+    height: 80%;
+    margin: 5px;
+}
+.projects-container{
+    grid-area: projects;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("assets/bg-cover2.jpg");
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    height: 45vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "boxTitle"
+        "boxContent";
+    box-shadow: -10px 10px 5px black;
+}
+.contact-container{
+    grid-area: contact;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("assets/broken.jpg");
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    height: 40vh;
+    box-shadow: -10px 10px 5px black;
+}
+.box-title{
+    grid-area: boxTitle;
+    display: flex;
+    border-bottom: solid 1px white;
+    align-items: center;
+}
+.box-title p{
+    font-family: "ABeeZee", sans-serif;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 30px;
+    letter-spacing: 3.5px;
+}
+.box-content{
+    grid-area: boxContent;
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: red 0 -2px;
+}
+.box-content h2{
+    display: flex;
+    align-items: center;
+    font-family: "ABeeZee", sans-serif;
+    color: white;
+    letter-spacing: 3.5px;
+    flex: 1;
+    height: 80%;
+    margin: 10px;
+    margin-left: 20px;
 }

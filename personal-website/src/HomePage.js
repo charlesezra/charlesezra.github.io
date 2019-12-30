@@ -6,8 +6,8 @@ const AboutTemplate = () => (
         <div className="ui top fixed menu">
             <a className="item">Charles Ezra Cabauatan</a>
             <a className="item">Skills</a>
-            <a className="item">Resume</a>
             <a className="item">Projects</a>
+            <a className="item">Resume</a>
             <div className="right menu">
                 <a className="item">Contact</a>
             </div>
@@ -19,7 +19,7 @@ const AboutTemplate = () => (
                 Student | Developer 
             </div>
             <div className="subtext">
-                I am currently a freshman at <strong>Virginia Tech</strong> studying Computer Science.
+                I am a freshman at <strong>Virginia Tech</strong> studying Computer Science.
                 I am looking for a summer internship position to be able to gain 
                 experience and improve my skill set.
             </div>
@@ -27,12 +27,53 @@ const AboutTemplate = () => (
     </div>
 );
 
-const SkillsTemplate = () => (
+const ExperienceTemplate = () => (
     <div>
-        <div className="skills-container">
-            <div>
-                <h1>My Skills</h1>
+        <div className="experience-container">
+            <div className="skills-container">
+                <div className="box-title">
+                    <p>Skills / Languages</p>
+                </div>
+                <div className="box-content">
+                    <div className="skills-box">
+                        <div className="skills">
+                            <ul>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>Visual Basic</li>
+                                <li>Python</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                        <div className="skills">
+                            <ul>
+                                <li>ReactJS</li>
+                                <li>GIT</li>
+                                <li>JavaFX</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div className="projects-container">
+                <div className="box-title">
+                    <p>Independent Projects</p>
+                </div>
+                <div className="box-content">
+                    <h2>Currently Working ...</h2>
+                </div>
+            </div>
+            <div className="contact-container">
+                <div className="box-title">
+                    <p>Contact Me</p>
+                </div>
+                <div className="box-content">
+                    
+                </div>
+            </div>
+
         </div>
     </div>
 );
@@ -42,7 +83,7 @@ class HomePage extends React.Component {
         return (
             <div>
                 <AboutTemplate />
-                <SkillsTemplate />
+                <ExperienceTemplate />
             </div>
         );
     }
