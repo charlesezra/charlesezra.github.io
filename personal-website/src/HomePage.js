@@ -7,13 +7,13 @@ const AboutTemplate = () => (
             <a className="item">Charles Ezra Cabauatan</a>
             <a className="item">Skills</a>
             <a className="item">Projects</a>
-            <a className="item">Resume</a>
+            <a className="item" href="https://drive.google.com/open?id=1awdOrOqPSq0pJlw20fvbjpzDjrAW40MD">Resume</a>
             <div className="right menu">
                 <a className="item">Contact</a>
             </div>
         </div>
         <div className="about-container">
-        <div class="profile-photo"></div>
+        <div className="profile-photo"></div>
             <h1 className="title">Charles Ezra Cabauatan</h1>
             <div className="subtitle">
                 Student | Developer 
@@ -67,10 +67,31 @@ const ExperienceTemplate = () => (
             </div>
             <div className="contact-container">
                 <div className="box-title">
-                    <p>Contact Me</p>
+                    <p>Contact Me / Talk to Me</p>
                 </div>
                 <div className="box-content">
-                    
+                    <div className="contact-box">
+                        <div className="contact">
+                            <div className="one">
+                                <i className="fas fa-envelope-square"></i>
+                            </div>
+                        </div>
+                        <div className="contact">
+                            <div className="two">
+                                <i className="fab fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <div className="contact">
+                            <div className="three">
+                                <i className="fab fa-github-square"></i>
+                            </div>
+                        </div>
+                        <div className="contact">
+                            <div className="four">
+                                <i className="fab fa-snapchat"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
