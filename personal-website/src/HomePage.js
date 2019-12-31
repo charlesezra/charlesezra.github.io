@@ -72,17 +72,29 @@ const ExperienceTemplate = () => (
                 <div className="box-content">
                     <div className="contact-box">
                         <div className="contact">
-                            <div className="one">
+                            <div className="one" href="charlesc18@vt.edu">
                                 <i className="fas fa-envelope-square"></i>
                             </div>
                         </div>
                         <div className="contact">
-                            <div className="two">
+                            <div 
+                                className="two"
+                                onClick={() =>{
+                                    window.open(
+                                        "https://www.linkedin.com/in/charles-ezra-cabauatan-77baa6191/"
+                                    );
+                                }}    
+                            >
                                 <i className="fab fa-linkedin"></i>
                             </div>
                         </div>
                         <div className="contact">
-                            <div className="three">
+                            <div 
+                                className="three"
+                                onClick={() =>{
+                                    window.open("https://github.com/charlesezra");
+                                }}
+                            >
                                 <i className="fab fa-github-square"></i>
                             </div>
                         </div>
