@@ -4,9 +4,9 @@ import './HomePage.css';
 const AboutTemplate = () => (
     <div>
         <div className="ui top fixed menu">
-            <a className="item">Charles Ezra Cabauatan</a>
-            <a className="item">Skills</a>
-            <a className="item">Projects</a>
+            <a className="item" href="#about">Charles Ezra Cabauatan</a>
+            <a className="item" href="#experience">Skills</a>
+            <a className="item" href="#experience">Projects</a>
             <a className="item" href="https://drive.google.com/open?id=1awdOrOqPSq0pJlw20fvbjpzDjrAW40MD">Resume</a>
             <div className="right menu">
                 <a className="item">Contact</a>
@@ -115,8 +115,8 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <AboutTemplate />
-                <ExperienceTemplate />
+                <section id="about"><AboutTemplate/></section>
+                <section id="experience"><ExperienceTemplate/></section>
             </div>
         );
     }
