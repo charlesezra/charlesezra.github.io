@@ -7,7 +7,7 @@ const AboutTemplate = () => (
             <a className="item" href="#about">Charles Ezra Cabauatan</a>
             <a className="item" href="#experience">Skills</a>
             <a className="item" href="#experience">Projects</a>
-            <a className="item" href="https://drive.google.com/open?id=1awdOrOqPSq0pJlw20fvbjpzDjrAW40MD">Resume</a>
+            <a className="item" href="https://drive.google.com/file/d/1j6bSL-IA1UMcPt2SLJ7vp4V9SK2LpzFC/view?usp=sharing">Resume</a>
             <div className="right menu">
                 <a className="item">Contact</a>
             </div>
