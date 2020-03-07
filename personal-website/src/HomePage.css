@@ -29,10 +29,6 @@ html{
     background-color: rgb(113, 88, 194);
     margin-bottom: 1px;
 }
-strong:hover {
-    color: rgb(180, 3, 3);
-    font-size: 3vmin;
-}
 .profile-photo{
     grid-area: ph;
     background-image: url("assets/logo.JPG");
@@ -128,6 +124,12 @@ strong:hover {
         "boxContent";
     box-shadow: -10px 10px 5px black;
     border-radius: 4px;
+}
+.projects{
+    font-size: 30px;
+}
+.projects ul li:hover{
+    font-size: 35px;
 }
 .contact-container{
     grid-area: contact;

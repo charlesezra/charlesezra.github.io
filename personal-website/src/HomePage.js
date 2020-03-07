@@ -7,7 +7,7 @@ const AboutTemplate = () => (
             <a className="item" href="#about">Charles Ezra Cabauatan</a>
             <a className="item" href="#experience">Skills</a>
             <a className="item" href="#experience">Projects</a>
-            <a className="item" href="https://drive.google.com/file/d/1j6bSL-IA1UMcPt2SLJ7vp4V9SK2LpzFC/view?usp=sharing">Resume</a>
+            <a className="item" href="https://drive.google.com/file/d/1ZqMAWv9L1T-crxQM3U53dLi3Pqd2m8n1/view?usp=sharing">Resume</a>
             <div className="right menu">
                 <a className="item">Contact</a>
             </div>
@@ -19,7 +19,7 @@ const AboutTemplate = () => (
                 Student | Developer 
             </div>
             <div className="subtext">
-                I am a freshman at <strong>Virginia Tech</strong> studying Computer Science.
+                I am a student at Virginia Tech studying Computer Science.
                 I am looking for a summer internship position to be able to gain 
                 experience and improve my skill set.
             </div>
@@ -62,7 +62,24 @@ const ExperienceTemplate = () => (
                     <p>Independent Projects</p>
                 </div>
                 <div className="box-content">
-                    <h2>Currently Working ...</h2>
+                    <div className="projects">
+                        <ul>
+                            <li 
+                                onClick={() =>{
+                                    window.open(
+                                        "https://github.com/charlesezra/Task-Manager"
+                                    );
+                                }} >
+                                Task Manager</li>
+                            <li
+                               onClick={() =>{
+                                window.open(
+                                    "https://github.com/charlesezra/Game-of-Life"
+                                );
+                            }}>
+                            Conway's Game of Life</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div className="contact-container">
