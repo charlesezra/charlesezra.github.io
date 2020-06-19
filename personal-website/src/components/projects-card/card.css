@@ -2,8 +2,8 @@
   width: 100%;
   height: 100%;
   color: black;
-  font-size: 22px;
-  -webkit-text-stroke: 1px rgba(144, 238, 144, 0.7);
+  font-size: 24px;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
 .card-content {
@@ -12,17 +12,19 @@
 }
 
 .card {
+  font-weight: bold;
   width: 35vh;
-  height: 30vh;
+  height: 35vh;
   margin: 0 auto;
   margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border: 3px solid #412722;
   box-shadow: 0 8px 6px -4px #1e2022;
   border-radius: 10px;
-  transition: transform 1s;
+  transition: transform 200ms;
 }
 
 .front-side .back-side {
@@ -32,6 +34,7 @@
 .back-side {
   background: white;
   transform: rotateY(180deg);
+  display: none;
 }
 
 .first-card {
@@ -41,7 +44,7 @@
 
 .second-card {
   grid-area: second;
-  background: lightgrey;
+  background: #f2a365;
 }
 
 .third-card {
@@ -88,7 +91,44 @@
 
 @media only screen and (min-width: 950px) {
   .card:hover {
-    transform: rotateY(180deg);
-    transition: transform 1s;
+    transform: translateY(-5px) scale(1.1);
+    /* transform: rotateY(180deg); */
+    transition: transform 400ms;
+  }
+
+  .first-card {
+    background: #dfdefe;
+  }
+
+  .second-card {
+    background: #f2a365;
+  }
+
+  .third-card {
+    background: rgba(102, 186, 255, 0.7);
+  }
+
+  .image-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    border: 1px solid black;
+    box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+  }
+
+  .image-box.task {
+    background: url(../../assets/tasklogo.png);
+    background-size: cover;
+  }
+
+  .image-box.activre{
+    background: url(../../assets/wip.jpg);
+    background-size: cover;
+  }
+
+  .image-box.game {
+    background: url(../../assets/game.png);
+    background-size: cover;
   }
 }

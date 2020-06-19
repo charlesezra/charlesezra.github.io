@@ -7,6 +7,7 @@ export default function ProjectCards() {
       <div className="card-content">
         <div className="card first-card">
           <div className="front-side">
+            <div className="image-box task"></div>
             <p>Task Manager</p>
           </div>
           <div className="back-side">
@@ -15,6 +16,7 @@ export default function ProjectCards() {
         </div>
         <div className="card second-card">
           <div className="front-side">
+            <div className="image-box activre"></div>
             <p>activRE</p>
           </div>
           <div className="back-side">
@@ -23,6 +25,7 @@ export default function ProjectCards() {
         </div>
         <div className="card third-card">
           <div className="front-side">
+            <div className="image-box game"></div>
             <p>Game of Life</p>
           </div>
           <div className="back-side">

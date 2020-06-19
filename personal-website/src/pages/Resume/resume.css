@@ -94,3 +94,16 @@
     height: 80vh;
   }
 }
+
+@media (max-width: 415px) {
+  .google-embed {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .google-embed {
+    height: 60vh;
+  }
+}
+
