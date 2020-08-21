@@ -14,24 +14,24 @@ export default function ProjectCards() {
             <p>Task Manager</p>
           </div>
         </button>
-        <div className="card second-card">
+        <button className="card second-card" onClick={() => setOpen(true)}>
           <div className="front-side">
             <div className="image-box activre"></div>
             <p>activRE</p>
           </div>
-        </div>
-        <div className="card third-card">
+        </button>
+        <button className="card third-card" onClick={() => setOpen(true)}>
           <div className="front-side">
             <div className="image-box game"></div>
             <p>Game of Life</p>
           </div>
-        </div>
-        <div className="card fourth-card">
+        </button>
+        <button className="card fourth-card" onClick={() => setOpen(true)}>
           <div className="front-side">
             <div className="image-box fourth"></div>
             <p>4th</p>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   );
