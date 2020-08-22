@@ -20,15 +20,6 @@ export default function ProjectCards() {
         </button>
         <button
           className="card second-card"
-          onClick={() => (setOpen(true), setName("activre"))}
-        >
-          <div className="front-side">
-            <div className="image-box activre"></div>
-            <p>activRE</p>
-          </div>
-        </button>
-        <button
-          className="card third-card"
           onClick={() => (setOpen(true), setName("gameoflife"))}
         >
           <div className="front-side">
@@ -36,10 +27,19 @@ export default function ProjectCards() {
             <p>Game of Life</p>
           </div>
         </button>
+        <button
+          className="card third-card"
+          onClick={() => (setOpen(true), setName("activre"))}
+        >
+          <div className="front-side">
+            <div className="image-box activre"></div>
+            <p>activRE</p>
+          </div>
+        </button>
         <div className="card fourth-card">
           <div className="front-side">
             <div className="image-box fourth"></div>
-            <p>4th</p>
+            <p>Coming Soon</p>
           </div>
         </div>
       </div>
