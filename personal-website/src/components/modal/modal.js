@@ -8,6 +8,7 @@ const styles = {
   modal: {
     background: "whitesmoke",
     margin: "auto auto",
+    padding: "40px",
     border: "3px solid #900d0d",
     borderRadius: "15px",
   },
@@ -34,7 +35,7 @@ export default function Popup({ open, setOpen, name, setName }) {
     url =
       "https://raw.githubusercontent.com/charlesezra/Game-of-Life/master/README.md";
   } else {
-    url = ""
+    url = "";
   }
 
   useEffect(() => {
@@ -53,7 +54,9 @@ export default function Popup({ open, setOpen, name, setName }) {
     return (
       <div>
         <Modal open={open} onClose={() => setOpen(false)} styles={styles}>
-          <ReactMarkdown source={mdText} disallowedTypes={Image} />
+          <div className="markdown-body">
+            <ReactMarkdown source={mdText} escapeHtml={false} />
+          </div>
         </Modal>
       </div>
     );
