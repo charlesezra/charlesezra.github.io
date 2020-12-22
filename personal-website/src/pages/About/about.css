@@ -324,4 +324,8 @@
   .information{
     height: 90vh;
   }
+
+  .description-container{
+    width: 100%;
+  }
 }
