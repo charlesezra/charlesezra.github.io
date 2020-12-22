@@ -33,15 +33,15 @@ export default function ProjectCards() {
         >
           <div className="front-side">
             <div className="image-box activre"></div>
-            <p>activRE</p>
+            <p>Active Recall</p>
           </div>
         </button>
-        <div className="card fourth-card">
+        {/* <div className="card fourth-card">
           <div className="front-side">
             <div className="image-box fourth"></div>
             <p>Coming Soon</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

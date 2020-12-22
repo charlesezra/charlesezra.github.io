@@ -6,14 +6,61 @@
 
 .content {
   display: grid;
-  grid-template-areas: "image description" "project project";
-  color: #eeeeee;
+  grid-template-areas: "banner banner" "info info" "project project";
+  grid-template-rows: 0.5fr 1fr 0.25fr;
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(to right bottom, #c9d6df 35%, #52616b);
-  padding-left: 4rem;
-  padding-top: 1rem;
+  /* background: linear-gradient(to right bottom, #c9d6df 35%, #52616b); */
+  color: #eeeeee;
+  padding-left: 3rem;
+}
+
+.banner-container{
+  grid-area: banner;
+}
+
+.banner-image{
+  background-image: url("../../assets/banner-pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-areas: ". . ." ". name ." ". . ."; 
+  grid-template-columns: 0.75fr 1fr 0.75fr;
+  grid-template-rows: 0.75fr 1fr 0.75fr;
+}
+
+.banner-name{
+  grid-area: name;
+  /* background: red; */
+  margin: auto;
+  width: 100%;
+}
+
+.banner-text{
+  color: #eeeeee;
+  font-size: 30px;
+  text-shadow: 1px 1px #ffd369;
+  padding: 12px;
+}
+
+.information-container{
+  grid-area: info;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #393e46;
+  /* background: blue; */
+}
+
+.information{
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  grid-template-areas: "image description";
 }
 
 .image-container {
@@ -21,6 +68,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 12rem;
+  /* background: red; */
 }
 
 .image {
@@ -28,29 +77,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid #412722;
-  border-radius: 10px;
-  box-shadow: 0 8px 6px 0px #1e2022;
-  height: 40vmin;
-  width: 40vmin;
+  border-radius: 100%;
+  box-shadow: 0px 0px 2px 4px #ffd369;
+  height: 10rem;
+  width: 10rem;
 }
 
 .description-container {
   grid-area: description;
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 40rem;
+  box-shadow: 0px 2px #ffd369;
 }
 
 .description {
-  border: 3px solid #412722;
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(48, 56, 65, 0.8);
-  box-shadow: 0 8px 6px 0px #1e2022;
-  width: 55vw;
-  height: 40vh;
-  padding: 10px 15px;
+  padding: 10px;
   text-align: left;
   transition: 500ms ease;
 
@@ -63,6 +105,8 @@
 .about-section {
   grid-area: about;
   padding: 5px;
+  width: 30rem;
+  font-size: 17px;
 }
 
 .skills-section {
@@ -97,13 +141,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  background: #222831;
 }
 
 .project {
-  width: 85vw;
-  height: 35vh;
-  padding: 0px;
+  width: 70vw;
+  height: 14rem;
+  padding: 10px;
   text-align: left;
   transition: 500ms ease;
 }
@@ -121,43 +165,64 @@
   }
 }
 
-@media (max-width: 950px) {
-  .content {
-    grid-template-areas: "image" "description" "project";
-    height: 100%;
+@media (max-width: 1100px) {
+  .about-container{
     width: 100%;
-    padding-top: 2rem;
+    height: 100%;
+  }
+  
+  .content {
+    grid-template-rows: 0.25fr 1fr 0.25fr;
+    grid-template-areas: "banner" "info" "project";
+  }
+
+  .information-container{
+    padding: 0;
+  }
+
+  .information{
+    grid-template-areas: "image description";
   }
 
   .image-container {
     padding: 0;
+    padding-left: 3rem;
+  }
+
+  .image{
+    height: 9rem;
+    width: 9rem;
   }
 
   .description-container {
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    box-shadow: none;
   }
 
   .description {
-    width: 80vw;
-    height: 40vh;
+    width: 30rem;
+    height: 17rem;
     grid-template-areas: "about about" "skills skills";
     grid-gap: 0;
   }
 
   .about-section {
     padding: 0;
+    font-size: 16px;
   }
 
   .skills-section {
     padding: 0;
-  }
-
-  .project {
-    width: 80vw;
+    padding-top: 10px;
   }
 
   .subtitle {
     font-size: 24px;
+  }
+
+  .project {
+    width: 85vw;
   }
 
   .info-list li {
@@ -172,27 +237,91 @@
 
   .skills-small {
     display: inline;
-    font-size: 2.95vmin;
+    padding: 0;
+    font-size: 17px;
   }
+
+  .about-section{
+    width: 100%;
+  }
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 975px) {
   .content {
-    padding-top: 4rem;
-    padding-left: 0;
+    padding-left: 3rem;
+  }
+
+  .banner-text{
+    font-size: 20px;
+  }
+
+  .information{
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: "image image" "description description";
+    height: 26rem;
+  }
+
+  .image-container{
+    padding: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .description-container{
+    padding: 0;
+    padding-left: 20px;
   }
 
   .description {
+    padding: 0;
     width: 85vw;
     height: 35vh;
   }
 
-  .project {
-    width: 85vw;
+  .image {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 655px){
+  .content {
+    padding-left: 0;
+    padding-top: 3rem;
   }
 
-  .image {
-    width: 45vmin;
-    height: 45vmin;
+  .information{
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas: "image image" "description description";
+    height: 28rem;
+  }
+
+  .description {
+    padding-top: 10px;
+    height: 100%;
+  }
+
+  .about-container{
+    padding: 0;
+  }
+
+  .about-section{
+    width: 100%;
+  }
+
+  .skills-container{
+    padding: 0;
+  }
+}
+
+@media (max-width: 414px){
+  .about-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .information{
+    height: 90vh;
   }
 }

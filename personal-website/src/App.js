@@ -10,11 +10,9 @@ class App extends Component {
       <div>
 
         <HashRouter basename='/'>
-        <Sidebar />
-          <div>
-            <Route exact path="/" component={About} />
-            <Route exact path="/resume" component={Resume} />
-          </div>
+          <Sidebar />
+          <Route exact path="/" component={About} />
+          <Route exact path="/resume" component={Resume} />
         </HashRouter>
       </div>
     );
