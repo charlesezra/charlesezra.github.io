@@ -23,20 +23,8 @@ export default function About() {
                 <div className="about-section">
                   <h1 className="subtitle">About me:</h1>
                   <p>
-                    I am a sophomore at Virginia Tech pursuing a degree in Computer Science. 
-                    I am working as a student software developer and undergraduate researcher at the Crowd Intelligence Lab. 
-                    We are focused on creating a tool that will help combat misinformation on social media through the use of crowd sourcing and open source intelligence. 
-                    I am also an undergraduate teaching assistant, and I help out students in Introduction to Python learn about programming concepts and basic logical programming. 
-                    For the spring semester, I have accepted an offer to work with Oracle in their Cloud Native Engineering Team as a Software Engineering Intern.
+                  I am a junior majoring in Computer Science at Virginia Tech. For the past spring & summer, I worked with Oracle on their Cloud Native Engineering Team as a Software Engineer Co-op where I had a chance to work with standing up a new microservice and maintaining established tools. Currently, I am a teaching assistant for the CS department, and I help out students with improving their Python, GIT, and SQL concepts. My main interests are software, web, and cloud development, but I am open to learning new skills and would be willing to work hard in order to learn technologies used in your company. I am seeking an internship for Summer 2022.
                   </p>
-                  {/* <ul className="info-list">
-                    <li>Pursuing a B.S. in Computer Science at Virginia Tech</li>
-                    <li>
-                      Looking for Software Engineering internships in order to
-                      utilize my skills to solve real-world problems
-                    </li>
-                    <li>Interested in software, mobile, and web development</li>
-                  </ul> */}
                 </div>
                 <div className="skills-section">
                   <h1 className="subtitle">Skills:</h1>
@@ -45,12 +33,13 @@ export default function About() {
                     <li>Python</li>
                     <li>C/C++</li>
                     <li>Javascript</li>
-                    <li>React</li>
-                    <li>NodeJS</li>
-                    <li>GIT</li>
+                    <li>SQL</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Flask</li>
                   </ul>
                   <p className="skills-small">
-                    Java, Python, C/C++, Javascript, React, NodeJS, GIT
+                    Java, Python, C/C++, Javascript, SQL, Docker, Kubernetes
                   </p>
                 </div>
               </div>
