@@ -23,7 +23,7 @@ export default function About() {
                 <div className="about-section">
                   <h1 className="subtitle">About me:</h1>
                   <p>
-                  I am a junior majoring in Computer Science at Virginia Tech. For the past spring & summer, I worked with Oracle on their Cloud Native Engineering Team as a Software Engineer Co-op where I had a chance to work with standing up a new microservice and maintaining established tools. Currently, I am a teaching assistant for the CS department, and I help out students with improving their Python, GIT, and SQL concepts. My main interests are software, web, and cloud development, but I am open to learning new skills and would be willing to work hard in order to learn technologies used in your company. I am seeking an internship for Summer 2022.
+                  I am a junior majoring in Computer Science at Virginia Tech. For the past spring & summer, I worked with Oracle on their Cloud Native Engineering Team as a Software Engineer Co-op where I had a chance to work with standing up a new microservice and maintaining established tools. Currently, I am a teaching assistant for the CS department, and I help out students with improving their Python, GIT, and SQL concepts. My main interests are software, web, and cloud development, but I am open to learning new skills. I am seeking an internship for Summer 2022.
                   </p>
                 </div>
                 <div className="skills-section">
@@ -36,7 +36,6 @@ export default function About() {
                     <li>SQL</li>
                     <li>Docker</li>
                     <li>Kubernetes</li>
-                    <li>Flask</li>
                   </ul>
                   <p className="skills-small">
                     Java, Python, C/C++, Javascript, SQL, Docker, Kubernetes
