@@ -7,14 +7,189 @@
   <body>
     <div id="page-banner" class="banner">
       <header>
-        <h1 id="title">Charles Ezra Cabauatan</h1>
+        <!-- Page Navigation -->
+        <h1 id="title">Charles Ezra Cabauatan's Resume</h1>
       </header>
     </div>
-    <div id="resume-content">
-      <section class="resume-section" id="contact"></section>
-      <section class="resume-section" id="education"></section>
-      <section class="resume-section" id="work-experience"></section>
-      <section class="resume-section" id="projects"></section>
+    <div id="main-resume">
+      <!-- Contact Information -->
+      <section class="resume-section" id="contact-info">
+        <h2 class="section-header">Contact Information</h2>
+        <address id="email">
+          <p>Email: <a href="mailto:charlesc18@vt.edu">charlesc18@vt.edu</a></p>
+        </address>
+        <p>
+          GitHub:
+          <a href="https://github.com/charlesezra">github.com/charlesezra</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://github.com/charlesezra">linkedin.com/charlesezra</a>
+        </p>
+      </section>
+      <!-- Education Section -->
+      <section class="resume-section" id="education">
+        <h2 class="section-header">Education</h2>
+        <ul>
+          <li class="degree">
+            Virginia Tech, Bachelor of Science in Computer Science
+            <ul id="degree-info">
+              <li>Expected Fall 2022</li>
+              <li>GPA: 3.73</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-section" id="skills">
+        <h2 class="section-header">Skills</h2>
+        <div id="programming-languages" class="skills-section">
+          <h3 class="subsec-header skill-header">Programming Languages</h3>
+          <ul class="skill-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+        <div id="technologies-skills" class="skills-section">
+          <h3 class="subsec-header skill-header">Technologies</h3>
+          <ul class="skill-list">
+            <li>ReactJS</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>NodeJS</li>
+            <li>Git Version Control</li>
+            <li>GraphQL</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div id="other-skills" class="skills-section">
+          <h3 class="subsec-header skill-header">Other</h3>
+          <ul class="skill-list">
+            <li>DevOps Environment (CI/CD)</li>
+            <li>API Design</li>
+            <li>Relational Databases</li>
+            <li>Unit Testing</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Experience Section -->
+      <section class="resume-section" id="work-experience">
+        <h2 class="section-header">Work Experience</h2>
+        <div id="maestro-experience" class="experience-section">
+          <h3 class="subsec-header experience-header">
+            Maestro Technologies | Software Engineer Intern
+          </h3>
+        </div>
+        <div id="oracle-experience" class="experience-section">
+          <h3 class="subsec-header experience-header">
+            Oracle Cloud Infrastructure (OCI) | Software Engineer Co-op
+          </h3>
+          <ul>
+            <li>
+              Developed and operated a new microservice which handled 250+
+              clients' production data to automate the process of scanning for
+              vulnerabilities using Python
+            </li>
+            <li>
+              Improved efficiency of backend processing with a 40% increase by
+              implementing an integration of direct SQL statements without
+              adding complexity in the codebase
+            </li>
+            <li>
+              Refactored code of 5+ services by reducing 20% lines by creating 3
+              internal, configurable Python packages that reworked error
+              handling and improved retry logic
+            </li>
+            <li>
+              Debugged Bash deploy scripts to automate installation of deploy
+              tools in a fresh Docker container through Ansible playbooks which
+              helped simplify a disaster recovery process
+            </li>
+            <li>
+              Improved maintainability of the core API engine by rewriting
+              legacy code logic and isolating to different services
+            </li>
+          </ul>
+        </div>
+        <div id="lab-experience" class="experience-section">
+          <h3 class="subsec-header experience-header">
+            Crowd Intelligence Lab at Virginia Tech Hume Center | Software
+            Engineer Intern
+          </h3>
+          <ul>
+            <li>
+              Reduced work of investigators by 75% through automation of the
+              process of creating crowdsourced investigations
+            </li>
+            <li>
+              Developed 5+ UI pages through the Django framework in
+              collaboration with 3 analysts to improve ease of use
+            </li>
+            <li>
+              Integrated backend processing of data collected from the user and
+              utilized PostgreSQL to fetch and store data
+            </li>
+            <li>
+              Reviewed source code during development and wrote corresponding
+              unit tests that cover 100% of the code
+            </li>
+          </ul>
+        </div>
+        <div id="ta-experience" class="experience-section">
+          <h3 class="subsec-header experience-header">
+            Virginia Tech Computer Science Department | Undergraduate Teaching
+            Assistant
+          </h3>
+          <ul>
+            <li>
+              Interacted with 75+ students weekly to explain Python, Git, and
+              SQL concepts
+            </li>
+            <li>
+              Implemented 5 course projects and ensured 100% of specifications
+              could be understood by a student
+            </li>
+            <li>
+              Assessed 28% of students for each assignment and communicated
+              improvements towards good programming practices
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="resume-section" id="projects">
+        <h2 class="section-header">Projects</h2>
+        <div id="grocery-saver-project" class="projects-section">
+          <h3 class="subsec-header project-header">Grocery Saver API</h3>
+          <p>
+            A unique take on saving money through automation by inputting a
+            grocery list to trigger a scan of a database that has scheduled
+            collection of coupon data from stores. Outputs a list of links to
+            the coupons that can be used with the store of choice.
+          </p>
+        </div>
+        <div id="activre-project" class="projects-section">
+          <h3 class="subsec-header project-header">Active Recall Web App</h3>
+          <p>
+            Built a tool to provide students a way of using active recall
+            studying technique which helps encourage spaced repetition studying
+            instead of cramming information.
+          </p>
+        </div>
+        <div id="game-of-life-project" class="projects-section">
+          <h3 class="subsec-header project-header">Game of Life Visualizer</h3>
+          <p>
+            I developed an application that incorporates Conway’s Game of Life
+            with a "gamified" user interface. Maximized on using algorithms to
+            provide a solution for this common problem.
+          </p>
+        </div>
+      </section>
     </div>
   </body>
 </html>
