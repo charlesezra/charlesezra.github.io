@@ -9,23 +9,51 @@
       <header>
         <!-- Page Navigation -->
         <h1 id="title">Charles Ezra Cabauatan's Resume</h1>
+        <img
+          src="assets/pfp.png"
+          alt="My Profile Picture"
+          width="375"
+          height="350"
+        />
+        <nav>
+          <a href="#contact-info">Contact Information</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#work-experience">Work Experience</a>
+          <a href="#projects">Projects</a>
+        </nav>
       </header>
     </div>
     <div id="main-resume">
       <!-- Contact Information -->
       <section class="resume-section" id="contact-info">
         <h2 class="section-header">Contact Information</h2>
-        <address id="email">
+        <p id="name">Charles Ezra Cabauatan</p>
+        <div id="address" class="contact-section">
+          <h3 class="subsec-header">Address</h3>
+          <address id="home-address" class="address">
+            <p class="street-address">
+              <span class="address street">401 Fairfax Rd<br /></span>
+              <span class="address city">Blacksburg</span>
+              <span class="address state">VA, </span>
+              <span class="address postal-code">24060<br /></span>
+            </p>
+          </address>
+        </div>
+        <div id="links" class="contact-section">
+          <h3 class="subsec-header">Links</h3>
           <p>Email: <a href="mailto:charlesc18@vt.edu">charlesc18@vt.edu</a></p>
-        </address>
-        <p>
-          GitHub:
-          <a href="https://github.com/charlesezra">github.com/charlesezra</a>
-        </p>
-        <p>
-          LinkedIn:
-          <a href="https://github.com/charlesezra">linkedin.com/charlesezra</a>
-        </p>
+          <p>
+            GitHub:
+            <a href="https://github.com/charlesezra">github.com/charlesezra</a>
+          </p>
+          <p>
+            LinkedIn:
+            <a href="https://linkedin.com/charlesezra"
+              >linkedin.com/charlesezra</a
+            >
+          </p>
+        </div>
       </section>
       <!-- Education Section -->
       <section class="resume-section" id="education">
@@ -80,16 +108,11 @@
       <!-- Experience Section -->
       <section class="resume-section" id="work-experience">
         <h2 class="section-header">Work Experience</h2>
-        <div id="maestro-experience" class="experience-section">
-          <h3 class="subsec-header experience-header">
-            Maestro Technologies | Software Engineer Intern
-          </h3>
-        </div>
         <div id="oracle-experience" class="experience-section">
           <h3 class="subsec-header experience-header">
             Oracle Cloud Infrastructure (OCI) | Software Engineer Co-op
           </h3>
-          <ul>
+          <ul class="experience-info">
             <li>
               Developed and operated a new microservice which handled 250+
               clients' production data to automate the process of scanning for
@@ -121,7 +144,7 @@
             Crowd Intelligence Lab at Virginia Tech Hume Center | Software
             Engineer Intern
           </h3>
-          <ul>
+          <ul class="experience-info">
             <li>
               Reduced work of investigators by 75% through automation of the
               process of creating crowdsourced investigations
@@ -142,10 +165,9 @@
         </div>
         <div id="ta-experience" class="experience-section">
           <h3 class="subsec-header experience-header">
-            Virginia Tech Computer Science Department | Undergraduate Teaching
-            Assistant
+            Virginia Tech Computer Science | Undergraduate Teaching Assistant
           </h3>
-          <ul>
+          <ul class="experience-info">
             <li>
               Interacted with 75+ students weekly to explain Python, Git, and
               SQL concepts
@@ -166,7 +188,7 @@
         <h2 class="section-header">Projects</h2>
         <div id="grocery-saver-project" class="projects-section">
           <h3 class="subsec-header project-header">Grocery Saver API</h3>
-          <p>
+          <p id="grocery-saver-description" class="project-description">
             A unique take on saving money through automation by inputting a
             grocery list to trigger a scan of a database that has scheduled
             collection of coupon data from stores. Outputs a list of links to
@@ -175,7 +197,7 @@
         </div>
         <div id="activre-project" class="projects-section">
           <h3 class="subsec-header project-header">Active Recall Web App</h3>
-          <p>
+          <p id="activre-description" class="project-description">
             Built a tool to provide students a way of using active recall
             studying technique which helps encourage spaced repetition studying
             instead of cramming information.
@@ -183,7 +205,7 @@
         </div>
         <div id="game-of-life-project" class="projects-section">
           <h3 class="subsec-header project-header">Game of Life Visualizer</h3>
-          <p>
+          <p id="game-of-life-description" class="project-description">
             I developed an application that incorporates Conway’s Game of Life
             with a "gamified" user interface. Maximized on using algorithms to
             provide a solution for this common problem.
