@@ -1,81 +1,124 @@
 /**
  * CSS Styling Document for Base Resume HTML
+ * Charles Ezra Cabauatan
+ *
+ * TODO:
+ * - use relative values, instead of pixels
+ * - each class selector should affect two elements
+ * - two different fonts
+ * - two different background colors
+ * - 1 tag selector, 1 class selector, 1 id selector
  */
 
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --banner-size: 7em;
+  --picture-size: 7em;
+  --scroll-length: 10em;
+  --default-border-size: 0.25em;
+  --small-border-size: 0.15em;
+  --border-radius-size: 1em;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 html {
-  scroll-padding-top: 150px;
+  scroll-padding-top: var(--scroll-length);
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 .page-header {
   position: fixed;
   top: 0;
   left: 0;
+  min-height: var(--banner-size);
   width: 100%;
-  border-bottom: 1px solid #395b64;
+  border-bottom: var(--default-border-size) solid #395b64;
   background-color: #f5f2e7;
   display: flex;
   flex-direction: row;
-  padding: 15px 10px;
+  padding: 1em;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 .page-banner-information {
-  padding: 10px;
+  padding: 0 1em;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 .nav-links {
   color: #2c3333;
   cursor: pointer;
   text-decoration: none;
-  border: 2px solid #395b64;
-  border-radius: 12px;
-  padding: 8px;
-  margin-right: 8px;
-  box-shadow: 0 5px #999;
+  border: var(--small-border-size) solid #395b64;
+  border-radius: var(--border-radius-size);
+  padding: 0.5em;
+  margin-right: 0.5em;
+  box-shadow: 0 0.25em #999;
   transition: 0.2s;
   background-color: white;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 .nav-links:hover {
   background-color: black;
   color: white;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 #title {
-  margin: 10px 0 25px 0;
+  margin: 0.75em 0;
   text-decoration: underline;
   color: #2c3333;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 #profile-pic {
-  width: 115px;
-  height: 110px;
-  border: 2px solid #395b64;
+  width: var(--picture-size);
+  height: var(--picture-size);
+  border: var(--default-border-size) solid #395b64;
   border-radius: 100%;
-  margin: 0 15px 0 20px;
+  margin: 0 0.75em;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 #main-resume {
-  margin-top: 145px;
-  padding: 5px;
+  margin: -1em;
+  padding: var(--scroll-length) 2em 1em;
   background-color: #2c3333;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 .resume-section {
-  border: 1px solid gainsboro;
-  border-radius: 10px;
-  padding: 24px;
-  margin: 10px 16px;
-  box-shadow: -4px 4px black;
+  border: var(--default-border-size) solid gainsboro;
+  border-radius: var(--border-radius-size);
+  padding: 1.25em;
+  margin: 1em;
+  box-shadow: -0.5em 0.5em black;
   background-color: white;
 }
 
+/**
+ * TODO: <Insert Comment Here>
+ */
 .section-header {
   margin: 0;
 }
