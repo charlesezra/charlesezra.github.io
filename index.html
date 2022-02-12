@@ -3,32 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <title>Charles Ezra Cabauatan's Resume</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div id="page-banner" class="banner">
-      <header>
+      <header class="page-header">
         <!-- Page Navigation -->
-        <h1 id="title">Charles Ezra Cabauatan's Resume</h1>
-        <img
-          src="assets/pfp.png"
-          alt="My Profile Picture"
-          width="375"
-          height="350"
-        />
-        <nav>
-          <a href="#contact-info">Contact Information</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#work-experience">Work Experience</a>
-          <a href="#projects">Projects</a>
-        </nav>
+        <img id="profile-pic" src="assets/pfp.png" alt="My Profile Picture" />
+        <div class="page-banner-information">
+          <h1 id="title">Charles Ezra Cabauatan</h1>
+          <nav>
+            <a class="nav-links" href="#contact-info">Contact Information</a>
+            <a class="nav-links" href="#education">Education</a>
+            <a class="nav-links" href="#skills">Skills</a>
+            <a class="nav-links" href="#work-experience">Work Experience</a>
+            <a class="nav-links" href="#projects">Projects</a>
+          </nav>
+        </div>
       </header>
     </div>
     <div id="main-resume">
       <!-- Contact Information -->
       <section class="resume-section" id="contact-info">
         <h2 class="section-header">Contact Information</h2>
-        <p id="name">Charles Ezra Cabauatan</p>
         <div id="address" class="contact-section">
           <h3 class="subsec-header">Address</h3>
           <address id="home-address" class="address">
@@ -42,17 +39,28 @@
         </div>
         <div id="links" class="contact-section">
           <h3 class="subsec-header">Links</h3>
-          <p>Email: <a href="mailto:charlesc18@vt.edu">charlesc18@vt.edu</a></p>
-          <p>
-            GitHub:
-            <a href="https://github.com/charlesezra">github.com/charlesezra</a>
-          </p>
-          <p>
-            LinkedIn:
-            <a href="https://linkedin.com/charlesezra"
-              >linkedin.com/charlesezra</a
-            >
-          </p>
+          <div class="contact-section-links">
+            <p class="link-label">
+              Email:<br />
+              <a href="mailto:charlesc18@vt.edu" class="contact-links"
+                >charlesc18@vt.edu</a
+              >
+            </p>
+            <p class="link-label">
+              GitHub:<br />
+              <a href="https://github.com/charlesezra" class="contact-links"
+                >github.com/charlesezra</a
+              >
+            </p>
+            <p class="link-label">
+              LinkedIn:<br />
+              <a
+                href="https://linkedin.com/in/charlesezra"
+                class="contact-links"
+                >linkedin.com/charlesezra</a
+              >
+            </p>
+          </div>
         </div>
       </section>
       <!-- Education Section -->
@@ -71,7 +79,7 @@
       <section class="resume-section" id="skills">
         <h2 class="section-header">Skills</h2>
         <div id="programming-languages" class="skills-section">
-          <h3 class="subsec-header skill-header">Programming Languages</h3>
+          <h3 class="subsec-header skill-header">Programming<br />Languages</h3>
           <ul class="skill-list">
             <li>Java</li>
             <li>Python</li>
@@ -84,7 +92,8 @@
         <div id="technologies-skills" class="skills-section">
           <h3 class="subsec-header skill-header">Technologies</h3>
           <ul class="skill-list">
-            <li>ReactJS</li>
+            <li>React.js</li>
+            <li>Angular</li>
             <li>Docker</li>
             <li>Kubernetes</li>
             <li>Django</li>
@@ -141,8 +150,7 @@
         </div>
         <div id="lab-experience" class="experience-section">
           <h3 class="subsec-header experience-header">
-            Crowd Intelligence Lab at Virginia Tech Hume Center | Software
-            Engineer Intern
+            Crowd Intelligence Lab at VT Hume Center | Software Engineer Intern
           </h3>
           <ul class="experience-info">
             <li>
