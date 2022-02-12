@@ -1,17 +1,12 @@
 /**
  * CSS Styling Document for Base Resume HTML
  * Charles Ezra Cabauatan
- *
- * TODO:
- * - (DONE) use relative values, instead of pixels
- * - each class selector should affect two elements
- * - (DONE) two different fonts
- * - (DONE) two different background colors
- * - (DONE) 1 tag selector, 1 class selector, 1 id selector
  */
 
 /**
- * TODO: <Insert Comment Here>
+ * Selects the root element of the document
+ * Adding frequently used styling here, so it can be
+ * easily changed.
  */
 :root {
   --banner-size: 7em;
@@ -25,14 +20,19 @@
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Selects the html tag of `index.html`
+ * It adds a scroll padding at the top. When users
+ * are navigating using the nav links with the banner,
+ * it will scroll without hiding content under banner.
  */
 html {
   scroll-padding-top: var(--scroll-length);
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Selects the elements with class: page-header
+ * It affects how the header will look like, and it
+ * also affects the children that is nested inside.
  */
 .page-header {
   position: fixed;
@@ -49,14 +49,17 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Adding a padding to the sides of a div element
+ * inside the class page-header.
  */
-.page-banner-information {
+.page-header > div {
   padding: 0 1em;
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Adding styling to the navigation links that are found
+ * in the page banner. It affects all anchor tags with
+ * class nav-links.
  */
 .nav-links {
   color: var(--default-font-color);
@@ -72,7 +75,8 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * When `nav-links` elements are hovered over by the user,
+ * it will change the link's background color and font color.
  */
 .nav-links:hover {
   background-color: black;
@@ -81,7 +85,8 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Needed to use id to target the single title of the page
+ * It adds margins, an underline, and font-color to my name in the page banner.
  */
 #title {
   margin: 0.75em 0;
@@ -90,7 +95,10 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Needed to use id here to target my profile picture.
+ * It is the only instance that is an image which is why
+ * I used an id to select it. It defines width and height
+ * with borders around it.
  */
 #profile-pic {
   width: var(--picture-size);
@@ -101,7 +109,9 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Needed to use id selector here to target the main-resume section.
+ * Adding margin and padding with colors to make the
+ * content look more appealing to users.
  */
 #main-resume {
   margin: -1em;
@@ -111,7 +121,9 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Adding styling that will be inherited by the nested elements
+ * inside resume-section class, also it affects all the sections
+ * with class resume-section.
  */
 .resume-section {
   border: var(--default-border-size) solid gainsboro;
@@ -125,7 +137,8 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Targeting contact-section div to apply flexbox in order to
+ * make the nested elements be side to side with each other.
  */
 .contact-section {
   display: flex;
@@ -133,7 +146,8 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Targeting the .subsec-header found inside .contact-section
+ * which defines width and adds an underline.
  */
 .contact-section .subsec-header {
   width: 8em;
@@ -141,7 +155,8 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Targeting the .contact-section-links div to apply flexbox
+ * to make the nested elements be side to side with each other.
  */
 .contact-section-links {
   display: flex;
@@ -149,14 +164,15 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Targeting elements with class .link-label to add a margin to the right.
  */
 .link-label {
   margin-right: 1em;
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Targeting elements with class .contact-links to have the
+ * default font color, removed text-decoration, and to be bold.
  */
 .contact-links {
   color: var(--default-font-color);
@@ -165,23 +181,27 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * When .contact-links are hovered over by the user,
+ * it will change font-color to the secondary color.
  */
 .contact-links:hover {
   color: var(--secondary-color);
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Targeting id skills and and its section-header to add
+ * flexbox to have elements side by side with each other.
  */
 #skills,
 #skills .section-header {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 1em;
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Adding styling for all of the elements with class .skills-section
+ * and its nested elements.
  */
 .skills-section {
   flex: 1;
@@ -197,7 +217,8 @@ html {
 }
 
 /**
- * TODO: <Insert Comment Here>
+ * Adding a margin to top and bottom of a subsec-header found inside
+ * class .section-header
  */
 .section-header,
 .subsec-header {
